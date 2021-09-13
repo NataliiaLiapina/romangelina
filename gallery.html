@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/gallery.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Приглашение на свадьбу</title>
+</head>
+<body>
+    <header class="section" id="home">
+        <nav class="menu">
+            <a href="index.html"><img src="images/svg/leftarrow.svg" alt="icon">Вернуться на главную</a>
+        </nav>
+    </header>
+    <main>
+        <div class="form-upload">
+            <p class="title">Фотогалерея</p>
+            <h1>#RomAngelina<img src="images/svg/heart.svg" alt="icon" ></h1>
+            <button id="form-upload-btn">Загрузить фото</button>
+            <form id="form-upload" name="uploader" method="post" action="" enctype="multipart/form-data">
+                <div class="inputs" id="formsdops">
+                    <input class="input-file" type="file" name="file[]" multiple>
+                    <input class="input-submit" type="submit" name="send" value="Загрузить">
+                </div>
+            </form>
+        </div>
+        <div class="gallery">
+            <div class="gallery-row">
+                <div class="gallery-wrapper">
+                    <div class="img-gallery">
+                        <div class="img-wrap">
+                            <a href="images/AH1I7766.jpg"><img src="images/AH1I7766.jpg" alt="img" onclick="currentSlide(1)"></a>
+                        </div>  
+                    </div>
+                </div> 
+                <div class="gallery-wrapper">
+                    <div class="img-gallery">
+                        <div class="img-wrap">
+                            <a href="images/AH1I7802.jpg"><img src="images/AH1I7802.jpg" alt="img" onclick="currentSlide(2)"></a>
+                        </div>  
+                    </div>
+                </div> 
+                <div class="gallery-wrapper">
+                    <div class="img-gallery">
+                        <div class="img-wrap">
+                            <a href="images/AH1I7833.jpg"><img src="images/AH1I7833.jpg" alt="img" onclick="currentSlide(3)"></a>
+                        </div>  
+                    </div>
+                </div> 
+            </div>
+            <div class="gallery-row">
+                <div class="gallery-wrapper">
+                    <div class="img-gallery">
+                        <div class="img-wrap">
+                            <a href="images/AH1I7960.jpg"><img src="images/AH1I7960.jpg" alt="img" onclick="currentSlide(4)"></a>
+                        </div>  
+                    </div>
+                </div> 
+                <div class="gallery-wrapper">
+                    <div class="img-gallery">
+                        <div class="img-wrap">
+                            <a href="images/AH1I8074.jpg"><img src="images/AH1I8074.jpg" alt="img" onclick="currentSlide(5)"></a>
+                        </div>  
+                    </div>
+                </div> 
+                <div class="gallery-wrapper">
+                    <div class="img-gallery">
+                        <div class="img-wrap">
+                            <a href="video/Wedding-Video.mp4">
+                                <video onclick="currentSlide(6)">
+                                    <source src="video/Wedding-Video.mp4">
+                                </video>
+                            </a>
+                        </div>  
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p> Development by <a href="http://create-site.ho.ua/">Nataliia Liapina</a></p>
+    </footer> 
+    <div class="slider-back">
+        
+    </div>
+    <div class="slider">
+        <div class="slide-block">
+            <div class="slide">
+                <img src="images/AH1I7766.jpg" alt="" />
+            </div>
+        </div>
+        <div class="slide-block">
+            <div class="slide">
+                <img src="images/AH1I7802.jpg" alt="" />
+            </div>
+        </div>
+        <div class="slide-block">
+            <div class="slide">
+                <img src="images/AH1I7833.jpg" alt="" />
+            </div>
+        </div>
+        <div class="slide-block">
+            <div class="slide">
+                <img src="images/AH1I7960.jpg" alt="" />
+            </div>
+        </div>
+        <div class="slide-block">
+            <div class="slide">
+                <img src="images/AH1I8074.jpg" alt="" />
+            </div>
+        </div>
+        <div class="slide-block">
+            <div class="slide"> 
+                <a href="video/Wedding-Video.mp4" target="_blank">
+                    <video>
+                        <source src="video/Wedding-Video.mp4">
+                    </video>
+                </a>
+            </div>
+		</div>
+        <div class="slider-close">&#10006;</div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <script src="js/gallery.js"></script> 
+</body>
+</html>

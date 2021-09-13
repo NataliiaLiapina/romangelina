@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/guestbook.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Приглашение на свадьбу</title>
+</head>
+<body>
+    <header class="section" id="home">
+        <nav class="menu">
+            <a href="index.html"><img src="images/svg/leftarrow.svg" alt="icon">Вернуться на главную</a>
+        </nav>
+    </header>
+    <main>
+        <div class="form-upload">
+            <p class="title">Гостевая книга</p>
+            <h1>#RomAngelina<img src="images/svg/heart.svg" alt="icon" ></h1>
+            <form id="" type="file" method="post" action="" enctype="multipart/form-data">
+                <label>Ваше имя:</label>
+                <input class="input-name" type="text" name="namesss">
+                <label>Здесь Вы можете оставить ваши пожелания паре:</label>
+                <textarea name="text1"></textarea>
+                <label>И загрузить фото/видео:</label>
+                <input class="input-file" type="file" name="file[]" multiple>
+                <input class="input-submit" id="textotpravka" type="submit" name="send" value="Отправить">
+            </form>
+        </div>
+        <div class="guest-book">
+            <div  class="guest-book-block">
+                <h1>Светлана и Сергей</h1>
+                <p>Желаем вам безконечной любви, счастья и уюта</p>
+                <div class="guest-book-img">
+                    <a href="images/AH1I7802.jpg" target="_blank"><img src="images/AH1I7802.jpg" alt="" /></a>
+                    <a href="video/Wedding-Video.mp4" target="_blank">
+                        <video>
+                            <source src="video/Wedding-Video.mp4">
+                        </video>
+                    </a>
+                    <a href="images/AH1I7802.jpg" target="_blank"><img src="images/AH1I7802.jpg" alt="" /></a>
+                </div>
+            </div>
+            <div  class="guest-book-block">
+                <h1>Юлия</h1>
+                <p>Любви и счастья вам</p>
+                <div class="guest-book-img">
+                    <a href="images/AH1I7802.jpg" target="_blank"><img src="images/AH1I7802.jpg" alt="" /></a>
+                    <a href="images/AH1I7802.jpg" target="_blank"><img src="images/AH1I7802.jpg" alt="" /></a>
+                    <a href="video/Wedding-Video.mp4" target="_blank">
+                        <video>
+                            <source src="video/Wedding-Video.mp4">
+                        </video>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p> Development by <a href="http://create-site.ho.ua/">Nataliia Liapina</a></p>
+    </footer> 
+	<script src="js/gl.js"></script> 
+</body>
+</html>
