@@ -1,0 +1,182 @@
+@font-face {
+  font-family: AllegroScript;
+  src: url("../fonts/18378.otf"); }
+
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial,Helvetica,sans-serif;
+  background: url(../images/fon.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%; }
+
+header {
+  width: 90%;
+  max-width: 700px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+  padding: 0px 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  header nav {
+    margin-left: -50px; }
+    header nav a {
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      line-height: 100px; }
+    header nav img {
+      width: 20px;
+      margin-right: 10px; }
+
+main {
+  width: 90%;
+  max-width: 700px;
+  height: auto;
+  min-height: calc(100% - 100px);
+  background: #fff;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding-top: 50px; }
+
+.form-upload {
+  padding: 0px 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .form-upload p.title {
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 0; }
+  .form-upload h1 {
+    font-family: AllegroScript;
+    font-size: 56px;
+    text-align: center;
+    font-weight: normal;
+    margin-top: 15px; }
+  .form-upload img {
+    width: 50px;
+    margin-left: 10px;
+    margin-bottom: -10px; }
+  .form-upload form {
+    width: 80%;
+    display: block;
+    margin: 0 auto; }
+    .form-upload form label {
+      margin-bottom: 5px; }
+    .form-upload form .input-name {
+      width: 100%;
+      margin-top: 5px;
+      margin-bottom: 20px;
+      padding: 5px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      border: 1px solid #ffb6c1; }
+    .form-upload form textarea {
+      width: 100%;
+      margin-top: 5px;
+      margin-bottom: 20px;
+      padding: 5px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      border: 1px solid #ffb6c1; }
+    .form-upload form .input-file {
+      width: 100%;
+      margin-top: 5px;
+      margin-bottom: 20px;
+      padding: 5px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
+    .form-upload form .input-submit {
+      padding: 15px 25px;
+      background: #fff;
+      border: 2px solid #ffb6c1;
+      outline: none;
+      color: #ffb6c1;
+      font-size: 16px;
+      font-weight: bold; }
+      .form-upload form .input-submit:hover {
+        background: #ffb6c1;
+        color: #fff; }
+
+.guest-book {
+  margin-top: 50px; }
+  .guest-book .guest-book-block {
+    background: #f5f5f5;
+    padding: 10px 50px;
+    border-bottom: 2px solid #ffcccc; }
+    .guest-book .guest-book-block:last-child {
+      border-bottom: none; }
+    .guest-book .guest-book-block h1 {
+      font-size: 20px;
+      font-weight: normal;
+      letter-spacing: 2px;
+      text-align: center;
+      margin-bottom: 0;
+      text-align: left; }
+    .guest-book .guest-book-block .guest-book-img img {
+      width: 150px; }
+    .guest-book .guest-book-block .guest-book-img video {
+      width: 150px; }
+
+footer {
+  height: 50px;
+  background: #f9f9f9; }
+  footer p {
+    text-align: center;
+    margin: 0;
+    line-height: 50px; }
+  footer a {
+    color: #000; }
+
+@media screen and (max-width: 650px) {
+  .form-upload form {
+    width: 95%;
+    display: block;
+    margin: 0 auto; } }
+
+@media screen and (max-width: 550px) {
+  .form-upload {
+    padding: 0px 20px; }
+  .guest-book .guest-book-block {
+    padding: 10px 20px; } }
+
+@media screen and (max-width: 480px) {
+  main {
+    padding-top: 30px; }
+  .form-upload form {
+    width: 100%; }
+  .form-upload p.title {
+    font-size: 18px; }
+  .form-upload h1 {
+    font-size: 48px; }
+  .form-upload img {
+    width: 40px; } }
+
+@media screen and (max-width: 375px) {
+  .form-upload form {
+    width: 100%; }
+  .form-upload p.title {
+    font-size: 18px; }
+  .form-upload h1 {
+    font-size: 42px; }
+  .form-upload img {
+    width: 35px; }
+  .guest-book .guest-book-block .guest-book-img img {
+    width: 130px; }
+  .guest-book .guest-book-block .guest-book-img video {
+    width: 130px; } }
